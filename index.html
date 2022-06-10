@@ -2,23 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grid</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .container > div {
+        background: #eee;
+        padding: 1em;
+      }
+      .container > div:nth-child(odd) {
+        background: #ddd;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-        veritatis laudantium aut similique harum qui sint temporibus ab, facilis
-        quis fugiat tenetur magnam. In eos iure perspiciatis sunt dicta
-        exercitationem atque saepe molestiae est rem, tenetur sed perferendis id
-        adipisci temporibus officiis doloribus excepturi ut dolorum placeat
-        ducimus? Recusandae, ipsa beatae facilis labore dicta fuga tempore
-        placeat aliquam mollitia. Sapiente ipsum hic odio nam assumenda enim. A
-        eos aliquid asperiores dolorem culpa reiciendis dolore soluta quod nihil
-        assumenda, expedita incidunt.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores
+        officiis expedita. Debitis veritatis, a dolor hic quidem ratione autem
+        officia tempora harum animi similique doloribus ipsam velit ducimus
+        pariatur rerum facere officiis laborum vitae.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        veritatis quibusdam, sit eius dolor numquam perferendis reprehenderit
+        doloremque inventore dolorum iste sed aliquam soluta rerum minima harum
+        consequuntur amet repellendus maxime libero itaque placeat neque omnis
+        quaerat? Magni, dignissimos perspiciatis?
+      </div>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+        accusamus quod, adipisci explicabo facere accusantium nihil repellendus
+        nemo expedita, qui omnis, sint illum esse! Eos, perspiciatis.
+        Repellendus, ut voluptatem optio perferendis dolores nisi ipsam nemo!
       </div>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore
@@ -26,7 +57,16 @@
         incidunt rerum eius, quae voluptas modi voluptatum repellat! Facere,
         eos!
       </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at
+        distinctio laborum qui consequuntur, deserunt ducimus? Dolorem tempora
+        facilis ipsa repellat temporibus commodi quo natus eos sequi, fuga
+        blanditiis quod consequuntur consequatur hic mollitia iusto! Dolore nemo
+        ipsam earum qui.
+      </div>
+      <div>Hello</div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
